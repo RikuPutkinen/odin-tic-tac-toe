@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  /*justify-items: center;*/
+  height: 100vh;
+}
+
+.gameboard {
+  display: grid;
+  background-color: black;
+  gap: 8px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+}
+
+.box {
+  background-color: white;
+}
