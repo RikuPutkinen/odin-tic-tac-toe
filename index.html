@@ -5,16 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>Odin Tic-Tac-Toe</title>
 </head>
 <body>
   <div class="container">
-    <div class="left">
-      <div class="player-name">Player 1</div>
-    </div>
-    
-    <div class="center">
-      <button id="restart-button">Restart game</button>
+    <div class="main">
+      <div class="button-container"><button id="restart-button">Restart game</button></div>
+      <div id="p1-name" class="player-name clickable">Player 1<span class="material-icons-outlined">edit</span></div>
+      <div id="p2-name" class="player-name clickable">Player 2<span class="material-icons-outlined">
+        edit
+        </span></div>
       <div class="turn-notification">Player 1's turn</div>
       <div class="gameboard">
         <div class="box" data-cell="0"></div>
@@ -28,11 +30,6 @@
         <div class="box" data-cell="8"></div>
       </div>
     </div>
-
-    <div class="right">
-      <div class="player-name">Player 2</div>
-    </div>
-
   </div>
 </body>
 </html>
